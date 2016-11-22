@@ -1,0 +1,50 @@
+.carouselbox {
+  
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin: 1em;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px #ccc;
+  overflow: hidden;
+}
+
+.content img {
+  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  text-align: relative;
+}
+
+.active {
+  height: 130px;
+}
+.active img {
+  position: absolute;
+  top: 200px;
+}
+.active img.current {
+  top: 30px;
+}
+
+
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 6;
+  position: relative;
+}
+.carouselbox button {
+  border: none;
+  display: none
+}
+.active button {
+  display: block;
+} 
+.offscreen {
+  position: absolute;
+  left: -2000px;
+}
